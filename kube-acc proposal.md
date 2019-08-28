@@ -2,8 +2,8 @@ Kube-acc Proposal
 ===============
 
 * [Motivation](#motivation)
-* [Goals](#Goals)
-* [Non-goals](#)
+* [Goals](#goals)
+* [Non-goals](#non-goals)
 * [Current Design](#current-design)
 * [Proposal](#proposal)
 * [Challenges](#challenges)
@@ -69,10 +69,14 @@ Notes:
 
 # Challenges:
 1.	How to better coordinate and co-evolve with DPI ? For example how to collaborate with some of the ongoing DPI enhancement work [1][2]
-  a. Answer: none of the DPI ongoing work targets management for more than one type of accelerator altogether, which is where kube-acc proposition differentiates.
+
+    Answer: none of the DPI ongoing work targets management for more than one type of accelerator altogether, which is where kube-acc proposition differentiates.
+
 2.	If user utilize kube-acc for accelerator attachment, how could we bind the resource to the pod (using PIP ?)
 
 # Reference:
 [0] Extending Kubernetes* with Intel® accelerator devices - Alexander Kanevskiy
-[1] https://github.com/kubernetes/enhancements/issues/693 (Node Topology)
-[2] https://github.com/kubernetes/kubernetes/pull/74423 (DPI topo info report)
+
+[1] Node Topology Manager https://github.com/kubernetes/enhancements/issues/693
+
+[2] DPI topo info report https://github.com/kubernetes/kubernetes/pull/74423
